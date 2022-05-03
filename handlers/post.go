@@ -38,7 +38,6 @@ func (post *Post) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 	// read file sent by users
 	fmt.Println(string(data))
-	// fmt.Println(data)
 
 	w.Write([]byte("Received request for 'POST'"))
 }
